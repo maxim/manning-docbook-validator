@@ -1,29 +1,6 @@
-# Manning::Docbook::Validator
+## Manning DocBook Validator
 
-TODO: Write a gem description
+Will be used to parse DocBook files and report back on duplicate IDs and code examples that are too long. Plus whatever other rules get made
+up along the way.
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'manning-docbook-validator'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install manning-docbook-validator
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Work in progress. Got to eat some dinner. Back in a bit.

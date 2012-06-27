@@ -13,15 +13,15 @@ module Manning
         @document = Nokogiri::XML(@file)
       end
 
-      def validate!
-        check_for_duplicate_ids!
-        check_line_lengths!
+      def validate
+        check_for_duplicate_ids
+        check_line_lengths
         self
       end
 
       private
 
-      def check_for_duplicate_ids!
+      def check_for_duplicate_ids
         ids = {}
         document.css("*[id]").each do |el|
           id = el[:id]
@@ -34,7 +34,7 @@ module Manning
         end
       end
 
-      def check_line_lengths!
+      def check_line_lengths
         document.css("programlisting").each do |el|
           parent = el.parent
           lines = el.text.split("\n")
